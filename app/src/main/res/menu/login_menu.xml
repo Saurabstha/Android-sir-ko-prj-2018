@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu1"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="menu1"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/menu2"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="menu2"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/menu3"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="menu3"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/menu4"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="menu4"
+        app:showAsAction="ifRoom"
+
+        >
+        <menu>
+            <item
+                android:id="@+id/submenu1"
+                android:title="submennu1" />
+            `
+            <item
+                android:id="@+id/submenu2"
+                android:title="submennu2" />
+
+
+            <item
+                android:id="@+id/submenu3"
+                android:title="submennu3" />
+
+
+            <item
+                android:id="@+id/submenu4"
+                android:title="submennu4" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu5"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="menu5"
+        app:showAsAction="ifRoom"
+
+        />
+
+</menu>

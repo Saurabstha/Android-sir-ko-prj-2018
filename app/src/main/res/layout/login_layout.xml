@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Login form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/pageTittleStyle"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@+id/title"
+        android:hint="Username"
+
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:hint="Password"
+
+        android:layout_margin="10dp"
+
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        style="@style/buttonStyle"
+        android:layout_below="@+id/spinner"
+
+        />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+
+        android:text="register"
+        android:layout_toRightOf="@+id/login"
+        android:layout_alignTop="@+id/login"
+        />
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:text="Remember me"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" />
+    <Spinner android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password">
+
+    </Spinner>
+    <AutoCompleteTextView android:id="@+id/autocomplete"
+        android:layout_below="@id/rememberme"
+        android:completionThreshold="1"
+        android:hint="username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>
